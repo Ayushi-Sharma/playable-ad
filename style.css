@@ -1,16 +1,64 @@
-#myProgress {
+html,
+body {
+  margin: 0;
+}
 
-  width: 100%;
+img {
+  width: 35vh;
+}
+
+.logo {
+  margin-bottom: 2rem;
+}
+
+.mini-text {
+  position: absolute;
+  width: 75vw;
+  height: 7vh;
+  font-family: 'i Ciel Cadena';
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.front-text {
+  color: #ffffff;
+  z-index: 2;
+}
+
+.back-text {
+  color: #000000;
+  z-index: 1;
+}
+
+.break-text {
+  margin-top: 2rem;
+}
+
+#main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: url('./assets/images/background.svg');
+}
+
+#myProgress {
+  width: 75vw;
   background-color: #fff;
   border: 2px solid black;
-  border-radius:17px;
-  height: 30px;
+  border-radius: 5vh;
+  height: 7vh;
 }
 
 #myBar {
   width: 0%;
-  
-  height: 30px;
-  background-color: #4CAF50;
-  border-radius:15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 7vh;
+  background-color: #4caf50;
+  border-radius: 5vh;
 }

@@ -1,21 +1,31 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="stylesheet" type="text/css" href="style.css"/>
-
-    <script type="text/javascript" src="https://imasdk.googleapis.com/js/sdkloader/ima3.js"></script>
-    <script type="text/javascript" src="application.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <section id="main">
+      <img src="./assets/images/cook_it_logo.svg" class="logo" />
+      <img src="./assets/images/main_character.svg" class="character" />
+      <div id="myProgress">
+        <div class="mini-text back-text">
+          Mini Game is loading
+        </div>
+        <div class="mini-text front-text">
+          Mini Game is loading
+        </div>
+        <div id="myBar"></div>
+      </div>
+      <img
+        src="./assets/images/take_a_break.svg"
+        class="break-text"
+        onclick="move()"
+      />
+    </section>
+    <script
+      type="text/javascript"
+      src="https://imasdk.googleapis.com/js/sdkloader/ima3.js"
+    ></script>
     <script type="text/javascript" src="ads.js"></script>
-    <script type="text/javascript" src="video_player.js"></script>
-
-    <h1>JavaScript Progress Bar</h1>
-
-	<div id="myProgress">
-		<div id="myBar"></div>
-	</div>
-
-	<br>
-	<button onclick="move()">Click Me</button> 
-
   </body>
 </html>
