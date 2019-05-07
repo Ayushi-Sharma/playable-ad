@@ -1,0 +1,30 @@
+#main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: url('./assets/images/Restaurant.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#table {
+	background: url('./assets/images/Ingredients_Fixed.svg');
+	margin-top: -2rem; 
+	width: 100vw;
+	height: 100vw;
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#plate {
+	margin-top: 5rem;
+	width: 40vw;
+}
+
+#banner {
+	width: 100vw;
+}
