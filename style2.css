@@ -12,12 +12,16 @@
 	background: url('./assets/images/Ingredients_Fixed.svg');
 	margin-top: -2rem; 
 	width: 100vw;
+	height: 100vw;
 	background-repeat: no-repeat;
 	background-size: cover;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 #plate {
-	margin: 35rem 30rem 30rem 25rem;;
+	margin-top: 5rem;
 	width: 40vw;
 }
 
