@@ -125,3 +125,77 @@ img {
   flex-direction: column;
   align-items: center;
 }
+
+.progress-bar {
+  position: relative;
+  border: #ccc solid 1px;
+  width: 75vw;
+  height: 7vh;
+  line-height: 7vh;
+  vertical-align: middle;
+  overflow: hidden;
+  font-family: arial, sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 4rem;
+  box-shadow: 0 4px 10px -5px rgba(0, 0, 0, 0.25);
+}
+.bar {
+  position: absolute;
+  top: 0;
+  height: 7vh;
+  overflow: hidden;
+}
+.bar > span {
+  position: absolute;
+  display: block;
+  width: 75vw;
+  height: 7vh;
+  text-align: center;
+}
+.bar.positive {
+  background: #fff;
+  right: 0;
+  width: 75vw;
+  -webkit-animation: animate-positive 4s;
+  animation: animate-positive 4s;
+}
+.bar.positive > span {
+  right: 0;
+  color: black;
+}
+
+.bar.negative {
+  position: absolute;
+  background: green;
+  left: 0;
+  width: 75vw;
+  border-radius: 4rem;
+  -webkit-animation: animate-negative 4s;
+  animation: animate-negative 4s;
+}
+.bar.negative > span {
+  left: 0;
+  color: white;
+}
+
+@-webkit-keyframes animate-positive {
+  0% {
+    width: 100%;
+  }
+}
+@keyframes animate-positive {
+  0% {
+    width: 100%;
+  }
+}
+@-webkit-keyframes animate-negative {
+  0% {
+    width: 0%;
+  }
+}
+@keyframes animate-negative {
+  0% {
+    width: 0%;
+  }
+}
