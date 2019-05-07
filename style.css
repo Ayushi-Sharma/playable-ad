@@ -10,7 +10,7 @@ img {
 .logo {
   margin-bottom: 2rem;
 }
-
+/*
 .mini-text {
   position: absolute;
   width: 75vw;
@@ -20,9 +20,9 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-}
+} */
 
-.front-text {
+/* .front-text {
   color: #ffffff;
   z-index: 2;
 }
@@ -30,7 +30,7 @@ img {
 .back-text {
   color: #000000;
   z-index: 1;
-}
+} */
 
 .break-text {
   margin-top: 2rem;
@@ -45,14 +45,14 @@ img {
   background: url('./assets/images/background.svg');
 }
 
-#myProgress {
+/* #myProgress {
   width: 75vw;
   background-color: #fff;
   border: 2px solid black;
   border-radius: 5vh;
   height: 7vh;
-}
-
+} */
+/*
 #myBar {
   width: 0%;
   display: flex;
@@ -61,7 +61,7 @@ img {
   height: 7vh;
   background-color: #4caf50;
   border-radius: 5vh;
-}
+} */
 
 @keyframes loading {
   0% {
@@ -100,4 +100,28 @@ img {
   content: 'Mini Game is loading';
   color: #008000;
   mix-blend-mode: difference;
+}
+@keyframes logo-animation {
+  0% {
+    margin-top: 1.5rem;
+  }
+  50% {
+    margin-top: 2rem;
+  }
+  100% {
+    margin-top: 1.5rem;
+  }
+}
+
+#logo {
+  position: absolute;
+  top: 0;
+  animation: logo-animation 2s linear infinite;
+}
+
+#non-logo {
+  margin-top: 10rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
