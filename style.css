@@ -62,3 +62,28 @@ img {
   background-color: #4caf50;
   border-radius: 5vh;
 }
+
+@keyframes logo-animation {
+  0% {
+    margin-top: 1.5rem;
+  }
+  50% {
+    margin-top: 2rem;
+  }
+  100% {
+    margin-top: 1.5rem;
+  }
+}
+
+#logo {
+  position: absolute;
+  top: 0;
+  animation: logo-animation 2s linear infinite;
+}
+
+#non-logo {
+  margin-top: 10rem; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
