@@ -1,15 +1,17 @@
-// function move() {
-//   var elem = document.getElementById('myBar');
-//   var width = 0;
-//   var id = setInterval(frame, 10);
-//   function frame() {
-//     if (width >= 100) {
-//       clearInterval(id);
-//     } else {
-//       width += 0.5;
-//       elem.style.width = width + '%';
-//     }
-//   }
-// }
+function gotoScene3() {
+  document.querySelector('#scene2').style.display = 'none';
+  document.querySelector('#download-section').style.display = 'flex';
+  document.getElementById('download-now').addClass('animated bounceInUp');
+}
 
-// move();
+function gotoScene2() {
+  document.querySelector('#main').style.display = 'none';
+  document.querySelector('#scene2').style.display = 'flex';
+  document.querySelector('#download-section').style.display = 'none';
+
+  document.getElementById('hand').addClass('animated bounceInLeft');
+  document.getElementById('plate').addClass('animated bounceInUp');
+}
+document.querySelector('#scene2').style.display = 'none';
+setTimeout(gotoScene2, 4000);
+setTimeout(gotoScene3, 6000);

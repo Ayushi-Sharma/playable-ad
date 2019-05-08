@@ -10,27 +10,6 @@ img {
 .logo {
   margin-bottom: 2rem;
 }
-/*
-.mini-text {
-  position: absolute;
-  width: 75vw;
-  height: 7vh;
-  font-family: 'i Ciel Cadena';
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-} */
-
-/* .front-text {
-  color: #ffffff;
-  z-index: 2;
-}
-
-.back-text {
-  color: #000000;
-  z-index: 1;
-} */
 
 .break-text {
   margin-top: 2rem;
@@ -44,24 +23,6 @@ img {
   height: 100vh;
   background: url('./assets/images/background.svg');
 }
-
-/* #myProgress {
-  width: 75vw;
-  background-color: #fff;
-  border: 2px solid black;
-  border-radius: 5vh;
-  height: 7vh;
-} */
-/*
-#myBar {
-  width: 0%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 7vh;
-  background-color: #4caf50;
-  border-radius: 5vh;
-} */
 
 @keyframes loading {
   0% {
@@ -126,6 +87,7 @@ img {
   align-items: center;
 }
 
+/* Progress Bar & its Animation */
 .progress-bar {
   position: relative;
   border: #ccc solid 1px;
@@ -164,7 +126,6 @@ img {
   right: 0;
   color: black;
 }
-
 .bar.negative {
   position: absolute;
   background: green;
@@ -198,4 +159,52 @@ img {
   0% {
     width: 0%;
   }
+}
+
+/* Game Play Section */
+
+#scene2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: url('./assets/images/Restaurant.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+.bannerContainer {
+  flex: 1;
+}
+
+#table {
+  background: url('./assets/images/Ingredients_Fixed.svg');
+  width: 100vw;
+  flex: 3;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#plate {
+  margin-top: 30vh;
+  width: 40vw;
+}
+
+#banner {
+  width: 100vw;
+}
+
+/* DOWNLOAD NOW SECTION */
+#download-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: url('./assets/images/Background_download.svg');
+  background-size: cover;
 }
