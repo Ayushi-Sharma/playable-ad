@@ -178,8 +178,8 @@ img {
   flex: 1;
 }
 
-#table {
-  background: url('./assets/images/Ingredients_Fixed.svg');
+#table-wrapper {
+  /*background: url('./assets/images/Ingredients_Fixed.svg');*/
   width: 100vw;
   flex: 3;
   background-repeat: no-repeat;
@@ -189,9 +189,16 @@ img {
   align-items: center;
 }
 
+#table {
+  position: absolute;
+  width: 100vw;
+
+}
+
 #plate {
-  margin-top: 30vh;
+  margin-top: 10vh;
   width: 40vw;
+  z-index: 1;
 }
 
 #banner {
@@ -199,6 +206,24 @@ img {
 }
 
 /* DOWNLOAD NOW SECTION */
+#non-logo-download {
+  padding-top: 20rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+}
+
+.character-container {
+  flex: 5;
+  display: flex;
+  align-items: flex-end;
+}
+
+.character-container > .character {
+  width: 100vw;
+}
+
 #download-section {
   display: flex;
   flex-direction: column;
@@ -211,13 +236,13 @@ img {
 
 @keyframes download_button {
   0% {
-    width: 25%;
+    width: 80vw;
   }
   50% {
-    width: 28%;
+    width: 90vw;
   }
   100% {
-    width: 25%;
+    width: 80vw;
   }
 }
 
@@ -227,6 +252,12 @@ img {
 }
 
 #dl-button-wrapper {
+  flex: 1;
   display: flex;
   justify-content: center;
+  align-items: flex-start;
+}
+
+.character {
+  width: 25rem;
 }
