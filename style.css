@@ -208,3 +208,25 @@ img {
   background: url('./assets/images/Background_download.svg');
   background-size: cover;
 }
+
+@keyframes download_button {
+  0% {
+    width: 25%;
+  }
+  50% {
+    width: 28%;
+  }
+  100% {
+    width: 25%;
+  }
+}
+
+#download-now {
+  position: absolute;
+  animation: download_button 0.7s linear infinite;
+}
+
+#dl-button-wrapper {
+  display: flex;
+  justify-content: center;
+}
