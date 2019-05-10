@@ -201,6 +201,78 @@ img {
   z-index: 1;
 }
 
+.dough {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  height: fit-content;
+  margin-top: 5vh;
+}
+
+.dough-add {
+  display: block;
+}
+
+.bacon {
+  display: none;
+  position: absolute;
+  z-index: 4;
+  height: fit-content;
+  margin-top: 4vh;
+}
+
+.bacon-add {
+  display: block;
+}
+
+.capsicum {
+  display: none;
+  position: absolute;
+  z-index: 5;
+  height: fit-content;
+  margin-top: 4vh;
+}
+
+.capsicum-add {
+  display: block;
+}
+
+.mushroom {
+  display: none;
+  position: absolute;
+  z-index: 6;
+  height: fit-content;
+  margin-top: 4vh;
+}
+
+.mushroom-add {
+  display: block;
+}
+
+.cheese {
+  display: none;
+  position: absolute;
+  z-index: 3;
+  height: fit-content;
+  margin-top: 4vh;
+}
+
+.cheese-add {
+  display: block;
+}
+
+.sause {
+  display: none;
+  position: absolute;
+  z-index: 2;
+  height: fit-content;
+  margin-top: 4vh;
+}
+
+.sause-add {
+  display: block;
+}
+
 #banner {
   width: 100vw;
 }
