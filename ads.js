@@ -8,17 +8,29 @@ function gotoScene2() {
   document.querySelector('#main').style.display = 'none';
   document.querySelector('#scene2').style.display = 'flex';
   document.querySelector('#download-section').style.display = 'none';
-
-  // document.getElementById('hand').addClass('animated bounceInLeft');
-  // document.getElementById('plate').addClass('animated bounceInUp');
-  document.getElementsByClassName('dough')[0].className += " dough-add";
-  document.getElementsByClassName('bacon')[0].className += " bacon-add";
-  document.getElementsByClassName('capsicum')[0].className += " capsicum-add";
-  document.getElementsByClassName('mushroom')[0].className += " mushroom-add";
-  document.getElementsByClassName('cheese')[0].className += " cheese-add";
-  document.getElementsByClassName('sause')[0].className += " sause-add";
 }
+
+function add_sause() {
+  document.getElementsByClassName('sause')[0].className += " ingredient-add";
+}
+
+function add_cheese() {
+  document.getElementsByClassName('cheese')[0].className += " ingredient-add";
+}
+
+function add_bacon() {
+  document.getElementsByClassName('bacon')[0].className += " ingredient-add";
+}
+
+function add_capsicum() {
+  document.getElementsByClassName('capsicum')[0].className += " ingredient-add";
+}
+
+function add_mushroom() {
+  document.getElementsByClassName('mushroom')[0].className += " ingredient-add";
+}
+
 // document.querySelector('#main').style.display = 'none';
 document.querySelector('#scene2').style.display = 'none';
-setTimeout(gotoScene2, 4000);
-setTimeout(gotoScene3, 6000);
+setTimeout(gotoScene2, 0000);
+// setTimeout(gotoScene3, 6000);

@@ -125,6 +125,7 @@ img {
 .bar.positive > span {
   right: 0;
   color: black;
+  font-size: 2.5rem;
 }
 .bar.negative {
   position: absolute;
@@ -138,6 +139,7 @@ img {
 .bar.negative > span {
   left: 0;
   color: white;
+  font-size: 2.5rem;
 }
 
 @-webkit-keyframes animate-positive {
@@ -179,7 +181,6 @@ img {
 }
 
 #table-wrapper {
-  /*background: url('./assets/images/Ingredients_Fixed.svg');*/
   width: 100vw;
   flex: 3;
   background-repeat: no-repeat;
@@ -202,75 +203,42 @@ img {
 }
 
 .dough {
-  display: none;
+  display: block;
   position: absolute;
   z-index: 1;
   height: fit-content;
   margin-top: 5vh;
 }
 
-.dough-add {
-  display: block;
-}
-
-.bacon {
+.ingredient {
   display: none;
   position: absolute;
-  z-index: 4;
   height: fit-content;
   margin-top: 4vh;
 }
 
-.bacon-add {
-  display: block;
-}
-
-.capsicum {
-  display: none;
-  position: absolute;
-  z-index: 5;
-  height: fit-content;
-  margin-top: 4vh;
-}
-
-.capsicum-add {
-  display: block;
-}
-
-.mushroom {
-  display: none;
-  position: absolute;
-  z-index: 6;
-  height: fit-content;
-  margin-top: 4vh;
-}
-
-.mushroom-add {
-  display: block;
-}
-
-.cheese {
-  display: none;
-  position: absolute;
-  z-index: 3;
-  height: fit-content;
-  margin-top: 4vh;
-}
-
-.cheese-add {
+.ingredient-add {
   display: block;
 }
 
 .sause {
-  display: none;
-  position: absolute;
   z-index: 2;
-  height: fit-content;
-  margin-top: 4vh;
 }
 
-.sause-add {
-  display: block;
+.cheese {
+  z-index: 3;
+}
+
+.bacon {
+  z-index: 4;
+}
+
+.capsicum {
+  z-index: 5;
+}
+
+.mushroom {
+  z-index: 6;
 }
 
 #banner {
@@ -287,7 +255,7 @@ img {
 }
 
 .character-container {
-  flex: 5;
+  flex: 13;
   display: flex;
   align-items: flex-end;
 }
@@ -324,7 +292,7 @@ img {
 }
 
 #dl-button-wrapper {
-  flex: 1;
+  flex: 4;
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -332,4 +300,5 @@ img {
 
 .character {
   width: 25rem;
+  height: 49vh;
 }
