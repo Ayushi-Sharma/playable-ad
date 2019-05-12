@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta name="ad.size" content="width=300,height=250" >
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+	  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+	  <meta name="apple-mobile-web-app-capable" content="yes" />
     <link rel="stylesheet" type="text/css" href="style.css" />
   </head>
   <body>
@@ -18,9 +20,6 @@
           <div class="bar negative">
             <span>Mini Game is loading</span>
           </div>
-          <!-- <div class="bg">
-            <div class="el"></div>
-          </div> -->
         </div>
         <img src="./assets/images/take_a_break.svg" class="break-text" />
       </div>
@@ -33,11 +32,16 @@
         <img src="./assets/images/Ingredients_Fixed.svg"/ id="table">
         <img src="./assets/images/pizza_plate.svg"/ id="plate">
         <img class="ingredient bacon" src="./assets/images/Bacon_Sliced.svg"/>
+        <div id="img" class="ingredient_static bacon_static" onclick="add_bacon()"></div>
         <img class="ingredient capsicum" src="./assets/images/capsicum.svg"/>
+        <div id="img" class="ingredient_static capsicum_static" onclick="add_capsicum()"></div>
         <img class="ingredient cheese" src="./assets/images/cheese.svg"/>
+        <div id="img" class="ingredient_static cheese_static" onclick="add_cheese()"></div>
         <img class="ingredient mushroom" src="./assets/images/mushroom.svg"/>
+        <div id="img" class="ingredient_static mushroom_static" onclick="add_mushroom()"></div>
         <img class="ingredient sause" src="./assets/images/red-sauce.svg"/>
-        <img class="dough" src="./assets/images/dough.svg" onclick="add_sause()"/>
+        <div id="img" class="ingredient_static sause_static" onclick="add_sause()"></div>
+        <img class="dough" src="./assets/images/dough.svg" />
       </div>
     </section>
     <section id="download-section">

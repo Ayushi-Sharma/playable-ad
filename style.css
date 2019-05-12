@@ -2,9 +2,13 @@ html,
 body {
   margin: 0;
 }
-
 img {
   width: 35vh;
+}
+
+#img {
+  width: 30vw;
+  height: 10vh;
 }
 
 .logo {
@@ -187,13 +191,13 @@ img {
   background-size: cover;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-end;
+  position: relative;
 }
 
 #table {
   position: absolute;
   width: 100vw;
-
 }
 
 #plate {
@@ -206,39 +210,74 @@ img {
   display: block;
   position: absolute;
   z-index: 1;
-  height: fit-content;
+  /* height: fit-content; */
   margin-top: 5vh;
 }
 
 .ingredient {
   display: none;
   position: absolute;
-  height: fit-content;
+  /* height: fit-content; */
   margin-top: 4vh;
+}
+
+.ingredient_static {
+  position: absolute;
+  width: 30vw;
+  height: 10vh;
 }
 
 .ingredient-add {
   display: block;
+  bottom: 18vh;
+}
+
+.ingredient-add.sauce {
+  bottom: 19vh;
 }
 
 .sause {
   z-index: 2;
 }
 
+.sause_static {
+  bottom: 21vh;
+  right: 1vh;
+}
+
 .cheese {
   z-index: 3;
+}
+
+.cheese_static {
+  bottom: 29vh;
+  left: 6vh;
 }
 
 .bacon {
   z-index: 4;
 }
 
+.bacon_static {
+  left: 1vh;
+  bottom: 21vh;
+}
+
 .capsicum {
   z-index: 5;
 }
 
+.capsicum_static {
+  bottom: 34vh;
+}
+
 .mushroom {
   z-index: 6;
+}
+
+.mushroom_static {
+  right: 6vh;
+  bottom: 35vh;
 }
 
 #banner {
@@ -301,4 +340,116 @@ img {
 .character {
   width: 25rem;
   height: 49vh;
+}
+
+/* For mobiles */
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+}
+
+/* For tablets in portrait mode */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+}
+
+/* For tablets in landscape and desktops */
+@media only screen and (min-width: 1024px) {
+}
+
+img,
+#img {
+  width: 35vw;
+}
+
+#plate {
+  margin-bottom: 15vh;
+}
+
+img.dough {
+  bottom: 15vh;
+  width: 43vw;
+}
+
+.cheese {
+}
+
+.sause {
+  /* bottom: 11.5vh; */
+}
+
+.capsicum {
+  width: 33vw;
+}
+.bacon {
+  width: 29vw;
+}
+.mushroom {
+  width: 26vw;
+}
+
+/* iPhone X */
+@media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) {
+  .bannerContainer {
+    flex: 2;
+    display: flex;
+  }
+
+  #table-wrapper {
+    align-items: flex-end;
+  }
+
+  img,
+  #img {
+    width: 35vw;
+  }
+
+  #plate {
+    margin-bottom: 15vh;
+  }
+
+  img.dough {
+    bottom: 15vh;
+    width: 43vw;
+  }
+
+  .sause {
+    bottom: 17vh;
+  }
+
+  .capsicum {
+    width: 33vw;
+  }
+  .bacon {
+    width: 29vw;
+  }
+  .mushroom {
+    width: 26vw;
+  }
+  .sause_static {
+    bottom: 21vh;
+    right: 1vh;
+  }
+
+  .cheese_static {
+    bottom: 29vh;
+    left: 6vh;
+  }
+
+  .bacon_static {
+    left: 1vh;
+    bottom: 21vh;
+  }
+
+  .capsicum_static {
+    bottom: 34vh;
+  }
+
+  .mushroom_static {
+    right: 6vh;
+    bottom: 28vh;
+  }
+}
+/* iPhone 8 */
+@media only screen and (device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) {
+}
+/* iPhone 8 Plus*/
+@media only screen and (device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) {
 }
