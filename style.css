@@ -13,6 +13,11 @@ img {
 
 .break-text {
   margin-top: 2rem;
+  font-family: iciencadena;
+  font-size: 7rem;
+  color: white;
+  -webkit-text-stroke-width: 0.5rem;
+  -webkit-text-stroke-color: black;
 }
 
 #main {
@@ -67,7 +72,7 @@ img {
     margin-top: 1.5rem;
   }
   50% {
-    margin-top: 2rem;
+    margin-top: 4rem;
   }
   100% {
     margin-top: 1.5rem;
@@ -81,10 +86,15 @@ img {
 }
 
 #non-logo {
-  margin-top: 10rem;
+  margin-top: 20rem;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+@font-face {
+  font-family: iciencadena;
+  src: url(./assets/ICIELCADENA.OTF);
 }
 
 /* Progress Bar & its Animation */
@@ -125,11 +135,12 @@ img {
 .bar.positive > span {
   right: 0;
   color: black;
-  font-size: 2.5rem;
+  font-size: 4rem;
+  font-family: iciencadena;
 }
 .bar.negative {
   position: absolute;
-  background: green;
+  background-image: linear-gradient(#00ff00, #005000);
   left: 0;
   width: 75vw;
   border-radius: 4rem;
@@ -139,7 +150,10 @@ img {
 .bar.negative > span {
   left: 0;
   color: white;
-  font-size: 2.5rem;
+  font-size: 4rem;
+  font-family: iciencadena;
+  -webkit-text-stroke-width: 0.3rem;
+  -webkit-text-stroke-color: black;
 }
 
 @-webkit-keyframes animate-positive {
@@ -161,6 +175,14 @@ img {
   0% {
     width: 0%;
   }
+}
+
+#tutorial_audio {
+  display: none;
+}
+
+#ingredient_audio {
+  display: none;
 }
 
 /* Game Play Section */
@@ -197,9 +219,27 @@ img {
 }
 
 #plate {
-  margin-top: 10vh;
+  margin-top: 5vh;
   width: 40vw;
   z-index: 1;
+  position: absolute;
+}
+
+@keyframes tutorial {
+  0% {
+    margin-left: 78vw;
+  }
+  100% {
+    margin-top: 15vh;
+    margin-left: 15vw;
+  }
+}
+
+.hand {
+  z-index: 1;
+  height: 10vh;
+  margin-left: 75vw;
+  animation: tutorial 3s ease-in-out infinite;
 }
 
 .dough {
@@ -296,6 +336,11 @@ img {
   display: flex;
   justify-content: center;
   align-items: flex-start;
+}
+
+#dl-link {
+  display: flex;
+  justify-content: center;
 }
 
 .character {
