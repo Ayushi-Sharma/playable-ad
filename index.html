@@ -7,15 +7,15 @@
     <link rel="stylesheet" type="text/css" href="style.css" />
   </head>
   <body>
-<!--     <iframe src="./assets/Sound/Main_Theme.mp3" allow="autoplay" style="display:none">
-    </iframe>  -->
-<!--     <audio autoplay>
+    <iframe src="./assets/Sound/Main_Theme.mp3" allow="autoplay" style="display:none">
+    </iframe>
+    <!-- <audio autoplay>
       <source src="./assets/Sound/Main_Theme.mp3" type="audio/mpeg">
       Your browser does not support the audio element.
     </audio> -->
 <!--     <iframe src="./assets/Sound/Tutorial_pop_up.mp3" style="display:none" id="tutorial_sound">
     </iframe>  -->
-<!--     <audio autoplay>
+    <!-- <audio autoplay>
       <source src="./assets/Sound/Tutorial_pop_up.mp3" type="audio/mpeg">
       Your browser does not support the audio element.
     </audio> -->
@@ -23,10 +23,10 @@
     <audio id="ingredient_audio" src="./assets/Sound/Tutorial_pop_up.mp3"></audio>
     <section id="main">
       <div id="logo">
-        <img src="./assets/images/cook_it_logo.svg" class="logo" />
+        <img src="./assets/images/cook_it_logo.svg" class="logo " />
       </div>
       <div id="non-logo">
-        <img src="./assets/images/main_character.svg"/>
+        <img src="./assets/images/main_character.svg" class="img-scene-1"/>
         <div class="progress-bar">
           <div class="bar positive">
             <span>Mini Game is loading</span>
@@ -44,8 +44,8 @@
       <div class="bannerContainer">
         <img src="./assets/images/banner.svg"/ id="banner" onclick="gotoScene3()">
       </div>
-      <div id="table-wrapper">
-        <img src="./assets/images/Ingredients_Fixed.svg"/ id="table" onclick="end_tutorial()"/>
+      <div id="table-wrapper" onclick="end_tutorial()">
+        <img src="./assets/images/Ingredients_Fixed.svg"/ id="table" />
         <img src="./assets/images/pizza_plate.svg"/ id="plate">
         <img class="hand" src="./assets/images/hand.svg"/>
         <img class="ingredient bacon" src="./assets/images/Bacon_Sliced.svg"/>
@@ -63,7 +63,7 @@
     </section>
     <section id="download-section">
       <div id="logo">
-        <img src="./assets/images/cook_it_logo.svg" class="logo" />
+        <img src="./assets/images/cook_it_logo.svg" class="logo-download-screen" />
       </div>
       <div id="non-logo-download">
         <div class="character-container">

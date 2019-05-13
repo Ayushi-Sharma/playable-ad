@@ -8,19 +8,29 @@ img {
 
 #img {
   width: 30vw;
-  height: 10vh;
+  height: 15vh;
+}
+
+img.img-scene-1 {
+  width: 25vh;
 }
 
 .logo {
   margin-bottom: 2rem;
+  width: 25vh;
+}
+
+.logo-download-screen {
+  margin-bottom: 2rem;
+  width: 30vh;
 }
 
 .break-text {
-  margin-top: 2rem;
+  margin-top: 1.5rem;
   font-family: iciencadena;
-  font-size: 7rem;
+  font-size: 1.6rem;
   color: white;
-  -webkit-text-stroke-width: 0.5rem;
+  -webkit-text-stroke-width: 0.125rem;
   -webkit-text-stroke-color: black;
 }
 
@@ -31,6 +41,7 @@ img {
   align-items: center;
   height: 100vh;
   background: url('./assets/images/background.svg');
+  background-size: cover;
 }
 
 @keyframes loading {
@@ -90,7 +101,7 @@ img {
 }
 
 #non-logo {
-  margin-top: 20rem;
+  margin-top: 4rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -139,7 +150,7 @@ img {
 .bar.positive > span {
   right: 0;
   color: black;
-  font-size: 4rem;
+  font-size: 1.5rem;
   font-family: iciencadena;
 }
 .bar.negative {
@@ -154,9 +165,9 @@ img {
 .bar.negative > span {
   left: 0;
   color: white;
-  font-size: 4rem;
+  font-size: 1.5rem;
   font-family: iciencadena;
-  -webkit-text-stroke-width: 0.3rem;
+  -webkit-text-stroke-width: 0.15rem;
   -webkit-text-stroke-color: black;
 }
 
@@ -213,8 +224,9 @@ img {
   background-size: cover;
   display: flex;
   justify-content: center;
-  align-items: flex-end;
+  align-items: center;
   position: relative;
+  margin-top: 1rem;
 }
 
 #table {
@@ -240,7 +252,7 @@ img {
 }
 
 .hand {
-  z-index: 1;
+  z-index: 2;
   height: 10vh;
   margin-left: 75vw;
   animation: tutorial 3s ease-in-out infinite;
@@ -259,6 +271,7 @@ img {
   position: absolute;
   /* height: fit-content; */
   margin-top: 4vh;
+  width: 21vh;
 }
 
 .ingredient_static {
@@ -269,7 +282,7 @@ img {
 
 .ingredient-add {
   display: block;
-  bottom: 18vh;
+  bottom: 20vh;
 }
 
 .ingredient-add.sauce {
@@ -278,10 +291,11 @@ img {
 
 .sause {
   z-index: 2;
+  bottom: 19vh;
 }
 
 .sause_static {
-  bottom: 21vh;
+  bottom: 23vh;
   right: 1vh;
 }
 
@@ -290,7 +304,7 @@ img {
 }
 
 .cheese_static {
-  bottom: 29vh;
+  bottom: 35vh;
   left: 6vh;
 }
 
@@ -300,7 +314,7 @@ img {
 
 .bacon_static {
   left: 1vh;
-  bottom: 21vh;
+  bottom: 24vh;
 }
 
 .capsicum {
@@ -308,7 +322,7 @@ img {
 }
 
 .capsicum_static {
-  bottom: 34vh;
+  bottom: 41vh;
 }
 
 .mushroom {
@@ -326,7 +340,7 @@ img {
 
 /* DOWNLOAD NOW SECTION */
 #non-logo-download {
-  padding-top: 20rem;
+  padding-top: 14rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -399,17 +413,17 @@ img {
 @media only screen and (min-width: 1024px) {
 }
 
-img,
+/* img,
 #img {
   width: 35vw;
-}
+} */
 
 #plate {
   margin-bottom: 15vh;
 }
 
 img.dough {
-  bottom: 15vh;
+  bottom: 17vh;
   width: 43vw;
 }
 
@@ -421,12 +435,15 @@ img.dough {
 }
 
 .capsicum {
+  bottom: 21vh;
   width: 33vw;
 }
 .bacon {
+  bottom: 21vh;
   width: 29vw;
 }
 .mushroom {
+  bottom: 21vh;
   width: 26vw;
 }
 
