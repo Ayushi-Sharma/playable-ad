@@ -12,7 +12,8 @@ img {
 }
 
 img.img-scene-1 {
-  width: 25vh;
+  width: 35vh;
+  margin-left: 10vw;
 }
 
 .logo {
@@ -28,9 +29,9 @@ img.img-scene-1 {
 .break-text {
   margin-top: 1.5rem;
   font-family: iciencadena;
-  font-size: 1.6rem;
+  font-size: 2rem;
   color: white;
-  -webkit-text-stroke-width: 0.125rem;
+  -webkit-text-stroke-width: 0.1rem;
   -webkit-text-stroke-color: black;
 }
 
@@ -87,7 +88,7 @@ img.img-scene-1 {
     margin-top: 1.5rem;
   }
   50% {
-    margin-top: 4rem;
+    margin-top: 2.2rem;
   }
   100% {
     margin-top: 1.5rem;
@@ -117,8 +118,8 @@ img.img-scene-1 {
   position: relative;
   border: #ccc solid 1px;
   width: 75vw;
-  height: 7vh;
-  line-height: 7vh;
+  height: 4vh;
+  line-height: 3vh;
   vertical-align: middle;
   overflow: hidden;
   font-family: arial, sans-serif;
@@ -130,7 +131,7 @@ img.img-scene-1 {
 .bar {
   position: absolute;
   top: 0;
-  height: 7vh;
+  height: 4vh;
   overflow: hidden;
 }
 .bar > span {
@@ -150,7 +151,7 @@ img.img-scene-1 {
 .bar.positive > span {
   right: 0;
   color: black;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-family: iciencadena;
 }
 .bar.negative {
@@ -165,9 +166,9 @@ img.img-scene-1 {
 .bar.negative > span {
   left: 0;
   color: white;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-family: iciencadena;
-  -webkit-text-stroke-width: 0.15rem;
+  -webkit-text-stroke-width: 0.06rem;
   -webkit-text-stroke-color: black;
 }
 
@@ -436,6 +437,15 @@ img.img-scene-1 {
   background-size: cover;
 }
 
+#download-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-size: cover;
+}
+
 @keyframes download_button {
   0% {
     width: 80vw;
@@ -467,7 +477,8 @@ img.img-scene-1 {
 
 .character {
   width: 25rem;
-  height: 49vh;
+  height: 60vh;
+  margin-top: -20vh;
 }
 
 /* For mobiles */

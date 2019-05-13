@@ -54,6 +54,7 @@ function add_mushroom() {
 
 function end_tutorial() {
   document.querySelector('.hand').style.display = 'none';
+  // document.querySelector('#banner').style.display = 'none';
 }
 
 function tutorial_sound() {
@@ -64,7 +65,7 @@ document.querySelector('#main').style.display = 'none';
 document.querySelector('#scene2').style.display = 'none';
 document.querySelector('#download-section').style.display = 'none';
 setTimeout(initialize, 500);
-setTimeout(gotoScene2, 500);
+setTimeout(gotoScene2, 4500);
 // setTimeout(tutorial_sound, 4000);
 
 if (isCapcicum && isMushroom && isBacon && isSauce && isCheese) {
