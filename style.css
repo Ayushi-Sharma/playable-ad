@@ -243,19 +243,88 @@ img.img-scene-1 {
 
 @keyframes tutorial {
   0% {
-    margin-left: 78vw;
+	height: 11vh;
+	margin-right: 50vw;
+	margin-bottom: -5vh;
+  }
+  10% {
+	height: 10vh;
+	margin-right: 50vw;
+	margin-bottom: -5vh;
+  }
+  20% {
+	height: 11vh;
+	margin-right: 50vw;
+	margin-bottom: -5vh;
+  }
+  25% {
+	height: 11vh;
+	margin-right: 30vw;
+	margin-bottom: 15vh;
+  }
+  30% {
+	height: 10vh;
+	margin-right: 30vw;
+	margin-bottom: 15vh;
+  }
+  40% {
+	height: 11vh;
+	margin-right: 30vw;
+	margin-bottom: 15vh;
+  }
+  45% {
+	height: 11vh;
+	margin-right: -15vw;
+    margin-bottom: 25vh;
+  }
+  50% {
+	height: 10vh;
+	margin-right: -15vw;
+    margin-bottom: 25vh;
+  }
+  60% {
+	height: 11vh;
+	margin-right: -15vw;
+    margin-bottom: 25vh;
+  }
+  65% {
+	height: 11vh;
+	margin-right: -65vw;
+    margin-bottom: 15vh;
+  }
+  70% {
+	height: 10vh;
+	margin-right: -65vw;
+    margin-bottom: 15vh;
+  }
+  80% {
+	height: 11vh;
+	margin-right: -65vw;
+    margin-bottom: 15vh;
+  }
+  85% {
+	height: 11vh;
+	margin-right: -85vw;
+    margin-bottom: -5vh;
+  }
+  90% {
+	height: 10vh;
+	margin-right: -85vw;
+    margin-bottom: -5vh;
   }
   100% {
-    margin-top: 15vh;
-    margin-left: 15vw;
+	height: 11vh;
+	margin-right: -85vw;
+    margin-bottom: -5vh;
   }
 }
 
 .hand {
   z-index: 2;
-  height: 10vh;
-  margin-left: 75vw;
-  animation: tutorial 3s ease-in-out infinite;
+  height: 11vh;
+  margin-right: 50vw;
+  margin-bottom: -5vh;
+  animation: tutorial 5s linear infinite;
 }
 
 .dough {
