@@ -219,14 +219,14 @@ img.img-scene-1 {
 
 #table-wrapper {
   width: 100vw;
-  flex: 3;
+  flex: 2;
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
-  margin-top: 1rem;
+  margin-top: 5rem;
 }
 
 #table {
@@ -336,6 +336,13 @@ img.img-scene-1 {
 
 #banner {
   width: 100vw;
+}
+
+#banner,
+#banner_gif,
+#banner_still_character {
+  position: absolute;
+  left: 0;
 }
 
 /* DOWNLOAD NOW SECTION */

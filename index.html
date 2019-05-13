@@ -9,16 +9,6 @@
   <body>
     <iframe src="./assets/Sound/Main_Theme.mp3" allow="autoplay" style="display:none">
     </iframe>
-    <!-- <audio autoplay>
-      <source src="./assets/Sound/Main_Theme.mp3" type="audio/mpeg">
-      Your browser does not support the audio element.
-    </audio> -->
-<!--     <iframe src="./assets/Sound/Tutorial_pop_up.mp3" style="display:none" id="tutorial_sound">
-    </iframe>  -->
-    <!-- <audio autoplay>
-      <source src="./assets/Sound/Tutorial_pop_up.mp3" type="audio/mpeg">
-      Your browser does not support the audio element.
-    </audio> -->
     <audio id="tutorial_audio" src="./assets/Sound/Tutorial_pop_up.mp3"></audio>
     <audio id="ingredient_audio" src="./assets/Sound/Tutorial_pop_up.mp3"></audio>
     <section id="main">
@@ -43,8 +33,10 @@
     <section id="scene2">
       <div class="bannerContainer">
         <img src="./assets/images/banner.svg"/ id="banner" onclick="gotoScene3()">
+        <img src="./assets/character/happy.gif" alt="css-sprites" id="banner_gif" border="0"></a>
+        <img src="./assets/character/still.png" alt="css-sprites" id="banner_still_character" border="0"></a>
       </div>
-      <div id="table-wrapper" onclick="end_tutorial()">
+      <div id="table-wrapper" onclick="end_tutorial();end_game();">
         <img src="./assets/images/Ingredients_Fixed.svg"/ id="table" />
         <img src="./assets/images/pizza_plate.svg"/ id="plate">
         <img class="hand" src="./assets/images/hand.svg"/>
@@ -61,7 +53,7 @@
         <img class="dough" src="./assets/images/dough.svg" />
       </div>
     </section>
-    <section id="download-section">
+    <section id="download-section" onclick="goToDownloadLink()">
       <div id="logo">
         <img src="./assets/images/cook_it_logo.svg" class="logo-download-screen" />
       </div>
