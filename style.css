@@ -454,7 +454,7 @@ img.img-scene-1 {
   position: absolute;
   width: 20vw;
   right: 15vw;
-  top: 10vw;
+  top: 10vh;
 }
 
 #banner,
@@ -543,23 +543,6 @@ img.img-scene-1 {
   margin-top: -20vh;
 }
 
-/* For mobiles */
-@media only screen and (min-width: 320px) and (max-width: 480px) {
-}
-
-/* For tablets in portrait mode */
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
-}
-
-/* For tablets in landscape and desktops */
-@media only screen and (min-width: 1024px) {
-}
-
-/* img,
-#img {
-  width: 35vw;
-} */
-
 #plate {
   bottom: 17vh;
 }
@@ -611,22 +594,116 @@ img.dough {
 
 /* iPhone X */
 @media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) {
+  #banner,
+  #banner_gif,
+  #banner_still_character {
+    top: 13vh;
+  }
+
   .bannerContainer {
     flex: 2;
     display: flex;
+  }
+
+  @keyframes tutorial {
+    0% {
+      height: 11vh;
+      margin-right: 50vw;
+      margin-bottom: 15vh;
+    }
+    10% {
+      height: 10vh;
+      margin-right: 50vw;
+      margin-bottom: 15vh;
+    }
+    20% {
+      height: 11vh;
+      margin-right: 50vw;
+      margin-bottom: 15vh;
+    }
+    25% {
+      height: 11vh;
+      margin-right: 25vw;
+      margin-bottom: 23vh;
+    }
+    30% {
+      height: 10vh;
+      margin-right: 25vw;
+      margin-bottom: 23vh;
+    }
+    40% {
+      height: 11vh;
+      margin-right: 25vw;
+      margin-bottom: 23vh;
+    }
+    45% {
+      height: 11vh;
+      margin-right: -20vw;
+      margin-bottom: 28vh;
+    }
+    50% {
+      height: 10vh;
+      margin-right: -20vw;
+      margin-bottom: 28vh;
+    }
+    60% {
+      height: 11vh;
+      margin-right: -20vw;
+      margin-bottom: 28vh;
+    }
+    65% {
+      height: 11vh;
+      margin-right: -65vw;
+      margin-bottom: 23vh;
+    }
+    70% {
+      height: 10vh;
+      margin-right: -65vw;
+      margin-bottom: 23vh;
+    }
+    80% {
+      height: 11vh;
+      margin-right: -65vw;
+      margin-bottom: 23vh;
+    }
+    85% {
+      height: 11vh;
+      margin-right: -85vw;
+      margin-bottom: 15vh;
+    }
+    90% {
+      height: 10vh;
+      margin-right: -85vw;
+      margin-bottom: 15vh;
+    }
+    100% {
+      height: 11vh;
+      margin-right: -85vw;
+      margin-bottom: 15vh;
+    }
+  }
+
+  .hand {
+    margin-right: 50vw;
+    margin-bottom: 15vh;
+    animation: tutorial 5s linear infinite;
   }
 
   #table-wrapper {
     align-items: flex-end;
   }
 
-  img,
   #img {
+    width: 30vw;
+    height: 10vh
+  }
+
+  img {
     width: 35vw;
   }
 
   #plate {
-    margin-bottom: 15vh;
+    bottom: 14.5vh;
   }
 
   img.dough {
@@ -636,17 +713,27 @@ img.dough {
 
   .sause {
     bottom: 17vh;
+    width: 37vw;
   }
 
   .capsicum {
     width: 33vw;
+    bottom: 19vh;
   }
   .bacon {
     width: 29vw;
+    bottom: 18vh;
   }
   .mushroom {
     width: 26vw;
+    bottom: 18vh;
   }
+
+  .cheese {
+    width: 37vw;
+    bottom: 17.5vh;
+  }
+
   .sause_static {
     bottom: 21vh;
     right: 1vh;
@@ -670,10 +757,212 @@ img.dough {
     right: 6vh;
     bottom: 28vh;
   }
+
+  .ingredient_static {
+    width: 30vw;
+    height: 10vh;
+  }
+
+  #download-now {
+    bottom: 14vh;
+  }
+
+  .hand_end_game {
+    margin-bottom: 12vh;
+    margin-left: 18vw;
+  }
 }
-/* iPhone 8 */
-@media only screen and (device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) {
+
+/* For tablets in portrait mode */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+
+  @keyframes download_button {
+    0% {
+      width: 60vw;
+    }
+    50% {
+      width: 65vw;
+    }
+    100% {
+      width: 60vw;
+    }
+  }
+
+  #download-now {
+    bottom: 10vh;
+  }
+
+  #download-now {
+    position: absolute;
+    animation: download_button 0.7s linear infinite;
+  }
+
+  .bar.negative > span {
+    font-size: 2rem;
+    -webkit-text-stroke-width: 0.08rem
+  }
+
+  .bar.positive > span {
+    font-size: 2rem;
+  }
+
+  .break-text {
+    font-size: 4rem;
+    -webkit-text-stroke-width: 0.18rem;
+  }
+
+  @keyframes tutorial {
+  0% {
+    height: 11vh;
+    margin-right: 50vw;
+    margin-bottom: -25vh;
+  }
+  10% {
+    height: 10vh;
+    margin-right: 50vw;
+    margin-bottom: -25vh;
+  }
+  20% {
+    height: 11vh;
+    margin-right: 50vw;
+    margin-bottom: -25vh;
+  }
+  25% {
+    height: 11vh;
+    margin-right: 30vw;
+    margin-bottom: 0;
+  }
+  30% {
+    height: 10vh;
+    margin-right: 30vw;
+    margin-bottom: 0;
+  }
+  40% {
+    height: 11vh;
+    margin-right: 30vw;
+    margin-bottom: 0;
+  }
+  45% {
+    height: 11vh;
+    margin-right: -15vw;
+    margin-bottom: 15vh;
+  }
+  50% {
+    height: 10vh;
+    margin-right: -15vw;
+    margin-bottom: 15vh;
+  }
+  60% {
+    height: 11vh;
+    margin-right: -15vw;
+    margin-bottom: 15vh;
+  }
+  65% {
+    height: 11vh;
+    margin-right: -65vw;
+    margin-bottom: 0;
+  }
+  70% {
+    height: 10vh;
+    margin-right: -65vw;
+    margin-bottom: 0;
+  }
+  80% {
+    height: 11vh;
+    margin-right: -65vw;
+    margin-bottom: 0;
+  }
+  85% {
+    height: 11vh;
+    margin-right: -85vw;
+    margin-bottom: -25vh;
+  }
+  90% {
+    height: 10vh;
+    margin-right: -85vw;
+    margin-bottom: -25vh;
+  }
+  100% {
+    height: 11vh;
+    margin-right: -85vw;
+    margin-bottom: -25vh;
+  }
 }
-/* iPhone 8 Plus*/
-@media only screen and (device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) {
+
+.hand {
+  margin-right: 50vw;
+  margin-bottom: -25vh;
+  animation: tutorial 5s linear infinite;
+}
+
+  #table {
+    top: 2vh;
+  }
+
+  #banner {
+    top: -3vh;
+  }
+
+  img.dough {
+    bottom: 5vh;
+  }
+
+  #plate {
+    bottom: 4vh;
+  }
+
+  .sause {
+    bottom: 8vh;
+    width: 37vw;
+  }
+
+  .capsicum {
+    width: 33vw;
+    bottom: 11vh;
+  }
+  .bacon {
+    width: 29vw;
+    bottom: 10vh;
+  }
+  .mushroom {
+    width: 26vw;
+    bottom: 10vh;
+  }
+
+  .cheese {
+    width: 37vw;
+    bottom: 9vh;
+  }
+
+  .sause_static {
+    bottom: 8vh;
+    right: 1vh;
+  }
+
+  .cheese_static {
+    bottom: 29vh;
+    left: 6vh;
+  }
+
+  .bacon_static {
+    left: 1vh;
+    bottom: 15vh;
+  }
+
+  .capsicum_static {
+    bottom: 34vh;
+  }
+
+  .mushroom_static {
+    right: 6vh;
+    bottom: 28vh;
+  }
+
+  .hand_end_game {
+    margin-top: 35vh;
+  }
+}
+
+/* For tablets in landscape and desktops */
+@media only screen and (min-width: 1024px) {
 }
