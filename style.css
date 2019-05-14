@@ -12,7 +12,8 @@ img {
 }
 
 img.img-scene-1 {
-  width: 25vh;
+  width: 35vh;
+  margin-left: 10vw;
 }
 
 .logo {
@@ -28,9 +29,9 @@ img.img-scene-1 {
 .break-text {
   margin-top: 1.5rem;
   font-family: iciencadena;
-  font-size: 1.6rem;
+  font-size: 2rem;
   color: white;
-  -webkit-text-stroke-width: 0.125rem;
+  -webkit-text-stroke-width: 0.1rem;
   -webkit-text-stroke-color: black;
 }
 
@@ -87,7 +88,7 @@ img.img-scene-1 {
     margin-top: 1.5rem;
   }
   50% {
-    margin-top: 4rem;
+    margin-top: 2.2rem;
   }
   100% {
     margin-top: 1.5rem;
@@ -117,8 +118,8 @@ img.img-scene-1 {
   position: relative;
   border: #ccc solid 1px;
   width: 75vw;
-  height: 7vh;
-  line-height: 7vh;
+  height: 4vh;
+  line-height: 3vh;
   vertical-align: middle;
   overflow: hidden;
   font-family: arial, sans-serif;
@@ -130,7 +131,7 @@ img.img-scene-1 {
 .bar {
   position: absolute;
   top: 0;
-  height: 7vh;
+  height: 4vh;
   overflow: hidden;
 }
 .bar > span {
@@ -150,7 +151,7 @@ img.img-scene-1 {
 .bar.positive > span {
   right: 0;
   color: black;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-family: iciencadena;
 }
 .bar.negative {
@@ -165,9 +166,9 @@ img.img-scene-1 {
 .bar.negative > span {
   left: 0;
   color: white;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-family: iciencadena;
-  -webkit-text-stroke-width: 0.15rem;
+  -webkit-text-stroke-width: 0.06rem;
   -webkit-text-stroke-color: black;
 }
 
@@ -229,6 +230,20 @@ img.img-scene-1 {
   margin-top: 5rem;
 }
 
+.pizza_division {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  top: 0;
+}
+
+#plate,
+.ingredient,
+.dough {
+  left: 30vw;
+}
+
 #table {
   position: absolute;
   width: 100vw;
@@ -243,19 +258,114 @@ img.img-scene-1 {
 
 @keyframes tutorial {
   0% {
-    margin-left: 78vw;
+    height: 11vh;
+    margin-right: 50vw;
+    margin-bottom: -5vh;
+  }
+  10% {
+    height: 10vh;
+    margin-right: 50vw;
+    margin-bottom: -5vh;
+  }
+  20% {
+    height: 11vh;
+    margin-right: 50vw;
+    margin-bottom: -5vh;
+  }
+  25% {
+    height: 11vh;
+    margin-right: 30vw;
+    margin-bottom: 15vh;
+  }
+  30% {
+    height: 10vh;
+    margin-right: 30vw;
+    margin-bottom: 15vh;
+  }
+  40% {
+    height: 11vh;
+    margin-right: 30vw;
+    margin-bottom: 15vh;
+  }
+  45% {
+    height: 11vh;
+    margin-right: -15vw;
+    margin-bottom: 25vh;
+  }
+  50% {
+    height: 10vh;
+    margin-right: -15vw;
+    margin-bottom: 25vh;
+  }
+  60% {
+    height: 11vh;
+    margin-right: -15vw;
+    margin-bottom: 25vh;
+  }
+  65% {
+    height: 11vh;
+    margin-right: -65vw;
+    margin-bottom: 15vh;
+  }
+  70% {
+    height: 10vh;
+    margin-right: -65vw;
+    margin-bottom: 15vh;
+  }
+  80% {
+    height: 11vh;
+    margin-right: -65vw;
+    margin-bottom: 15vh;
+  }
+  85% {
+    height: 11vh;
+    margin-right: -85vw;
+    margin-bottom: -5vh;
+  }
+  90% {
+    height: 10vh;
+    margin-right: -85vw;
+    margin-bottom: -5vh;
   }
   100% {
-    margin-top: 15vh;
-    margin-left: 15vw;
+    height: 11vh;
+    margin-right: -85vw;
+    margin-bottom: -5vh;
   }
 }
 
 .hand {
   z-index: 2;
-  height: 10vh;
-  margin-left: 75vw;
-  animation: tutorial 3s ease-in-out infinite;
+  height: 11vh;
+  margin-right: 50vw;
+  margin-bottom: -5vh;
+  animation: tutorial 5s linear infinite;
+}
+
+@keyframes pizza_delivery_tutorial {
+  0% {
+    height: 11vh;
+  }
+  35% {
+    height: 11vh;
+  }
+  50% {
+    height: 10vh;
+  }
+  65% {
+    height: 11vh;
+  }
+  100% {
+    height: 11vh;
+  }
+}
+
+.hand_end_game {
+  z-index: 7;
+  height: 11vh;
+  margin-top: 15vh;
+  margin-left: 10vw;
+  animation: pizza_delivery_tutorial 1.5s linear infinite;
 }
 
 .dough {
@@ -323,6 +433,7 @@ img.img-scene-1 {
 
 .capsicum_static {
   bottom: 41vh;
+  left: 36vw;
 }
 
 .mushroom {
@@ -336,6 +447,14 @@ img.img-scene-1 {
 
 #banner {
   width: 100vw;
+  z-index: 5;
+}
+
+#order_menu {
+  position: absolute;
+  width: 20vw;
+  right: 15vw;
+  top: 10vw;
 }
 
 #banner,
@@ -343,6 +462,12 @@ img.img-scene-1 {
 #banner_still_character {
   position: absolute;
   left: 0;
+}
+
+#banner_gif,
+#banner_still_character {
+  width: 30vh;
+  bottom: 45vh;
 }
 
 /* DOWNLOAD NOW SECTION */
@@ -371,6 +496,15 @@ img.img-scene-1 {
   align-items: center;
   height: 100vh;
   background: url('./assets/images/Background_download.svg');
+  background-size: cover;
+}
+
+#download-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
   background-size: cover;
 }
 
@@ -405,7 +539,8 @@ img.img-scene-1 {
 
 .character {
   width: 25rem;
-  height: 49vh;
+  height: 60vh;
+  margin-top: -20vh;
 }
 
 /* For mobiles */
@@ -426,32 +561,52 @@ img.img-scene-1 {
 } */
 
 #plate {
-  margin-bottom: 15vh;
+  bottom: 17vh;
 }
 
 img.dough {
   bottom: 17vh;
   width: 43vw;
+  left: 28vw;
 }
 
 .cheese {
+  left: 31vw;
 }
 
 .sause {
-  /* bottom: 11.5vh; */
+  left: 31vw;
 }
 
 .capsicum {
   bottom: 21vh;
   width: 33vw;
+  left: 34vw;
 }
 .bacon {
   bottom: 21vh;
   width: 29vw;
+  left: 35vw;
 }
 .mushroom {
   bottom: 21vh;
   width: 26vw;
+  left: 36vw;
+}
+
+@keyframes flying_pizza {
+  0% {
+    bottom: 0;
+    left: 0;
+  }
+  100% {
+    bottom: 40vh;
+    left: -20vw;
+  }
+}
+
+.pizza_animate {
+  animation: flying_pizza 0.5s linear;
 }
 
 /* iPhone X */

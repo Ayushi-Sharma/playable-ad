@@ -10,7 +10,8 @@
     <iframe src="./assets/Sound/Main_Theme.mp3" allow="autoplay" style="display:none">
     </iframe>
     <audio id="tutorial_audio" src="./assets/Sound/Tutorial_pop_up.mp3"></audio>
-    <audio id="ingredient_audio" src="./assets/Sound/Tutorial_pop_up.mp3"></audio>
+    <audio id="ingredient_audio" src="./assets/Sound/ingredients_add.mp3"></audio>
+    <audio id="customer_happy" src="./assets/Sound/Customer_happy_female.mp3"></audio>
     <section id="main">
       <div id="logo">
         <img src="./assets/images/cook_it_logo.svg" class="logo " />
@@ -35,22 +36,27 @@
         <img src="./assets/images/banner.svg"/ id="banner" onclick="gotoScene3()">
         <img src="./assets/character/happy.gif" alt="css-sprites" id="banner_gif" border="0"></a>
         <img src="./assets/character/still.png" alt="css-sprites" id="banner_still_character" border="0"></a>
+        <img src="./assets/images/order_menu.png" id="order_menu"></a>
       </div>
-      <div id="table-wrapper" onclick="end_tutorial();end_game();">
-        <img src="./assets/images/Ingredients_Fixed.svg"/ id="table" />
-        <img src="./assets/images/pizza_plate.svg"/ id="plate">
+      <div id="table-wrapper" onclick="end_tutorial()">
+        <img src="./assets/images/Ingredients_Fixed.svg"/ id="table"/>
         <img class="hand" src="./assets/images/hand.svg"/>
-        <img class="ingredient bacon" src="./assets/images/Bacon_Sliced.svg"/>
-        <div id="img" class="ingredient_static bacon_static" onclick="add_bacon()"></div>
-        <img class="ingredient capsicum" src="./assets/images/capsicum.svg"/>
-        <div id="img" class="ingredient_static capsicum_static" onclick="add_capsicum()"></div>
-        <img class="ingredient cheese" src="./assets/images/cheese.svg"/>
-        <div id="img" class="ingredient_static cheese_static" onclick="add_cheese()"></div>
-        <img class="ingredient mushroom" src="./assets/images/mushroom.svg"/>
-        <div id="img" class="ingredient_static mushroom_static" onclick="add_mushroom()"></div>
-        <img class="ingredient sause" src="./assets/images/red-sauce.svg"/>
-        <div id="img" class="ingredient_static sause_static" onclick="add_sause()"></div>
-        <img class="dough" src="./assets/images/dough.svg" />
+        <img class="hand_end_game" src="./assets/images/hand.svg" onclick="serve_pizza()"/>
+        <div class="pizza_division">
+          <img src="./assets/images/pizza_plate.svg"/ id="plate" onclick="serve_pizza()">
+          <img class="ingredient bacon" src="./assets/images/Bacon_Sliced.svg" onclick="serve_dish()"/>
+          <div id="img" class="ingredient_static bacon_static" onclick="add_bacon()"></div>
+          <img class="ingredient capsicum" src="./assets/images/capsicum.svg" onclick="serve_dish()"/>
+          <div id="img" class="ingredient_static capsicum_static" onclick="add_capsicum()"></div>
+          <img class="ingredient cheese" src="./assets/images/cheese.svg" onclick="serve_dish()"/>
+          <div id="img" class="ingredient_static cheese_static" onclick="add_cheese()"></div>
+          <img class="ingredient mushroom" src="./assets/images/mushroom.svg" onclick="serve_dish()"/>
+          <div id="img" class="ingredient_static mushroom_static" onclick="add_mushroom()"></div>
+          <img class="ingredient sause" src="./assets/images/red-sauce.svg" onclick="serve_dish()"/>
+          <div id="img" class="ingredient_static sause_static" onclick="add_sause()"></div>
+          <img class="dough" src="./assets/images/dough.svg" onclick="serve_dish()"/>
+        </div>
+
       </div>
     </section>
     <section id="download-section" onclick="goToDownloadLink()">
